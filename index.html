@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: hsl(218, 23%, 16%);
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 20px;
+    }
+
+    .main-container {
+      background-color: hsl(217, 19%, 24%);
+      width: 100%;
+      max-width: 350px;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+
+    }
+
+    .advice-card {
+      background-color: hsl(217, 19%, 38%);
+      width: 100%;
+      max-width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+      /* padding: 30px; */
+      border-radius: 20px;
+    
+
+      /* height: 200px;
+       */
+    }
+
+    .advice-id-wrap {
+      display: flex;
+      color: hsl(150, 100%, 66%);
+      padding-top: 20px;
+      font-size: 18px;
+      justify-content: center;
+    }
+    .quote{
+      color: hsl(193, 38%, 86%);
+      font-size: 25px;
+      padding: 10px;
+    }
+    .icon-dice{
+      padding-top: 20px;
+    
+      
+    }
+    
+  
+
+    
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+
+      
+    }
+
+
+
+    @media screen and (min-width: 800px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  </style>
+</head>
+
+<body>
+  <main class="main-container">
+    <section class="advice-wrapper">
+      <div class="advice-card">
+        <div class="advice-id-wrap">
+          <P>ADVICE #</P>
+          <p id="advice-id" class="advice-id"></p>
+        </div>
+
+        <p id="quote" class="quote">""</p>
+        <img src="./images/pattern-divider-mobile.svg" alt="" width="">
+
+        <img src="./images/icon-dice.svg" alt="icon-dice" id="play-button" class=" icon-dice" width="40">
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script src="app.js" async defer></script>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">CHRISTEE</a>.
+  </div>
+ 
+</body>
+
+</html>
